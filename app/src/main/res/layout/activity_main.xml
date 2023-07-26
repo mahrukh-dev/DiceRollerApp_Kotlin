@@ -6,44 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/diceOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="299dp"
-        android:layout_marginEnd="52dp"
-        android:textSize="@dimen/_24sdp"
-        app:layout_constraintEnd_toStartOf="@+id/diceTwo"
+        style="@style/dice_textView_style"
+        android:layout_marginStart="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="1" />
+        />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="323dp"
-        android:text="@string/roll"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        style="@style/roll_button_style"
+        app:layout_constraintEnd_toEndOf="@+id/diceTwo"
+        app:layout_constraintStart_toStartOf="@+id/diceOne"
+        app:layout_constraintTop_toBottomOf="@+id/diceOne"
 
-    <TextView
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/diceTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="299dp"
-        android:layout_marginEnd="162dp"
-        android:textSize="@dimen/_24sdp"
-        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/dice_textView_style"
+        android:layout_marginStart="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/diceOne"
         app:layout_constraintStart_toEndOf="@+id/diceOne"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="1" />
+        app:layout_constraintTop_toTopOf="@+id/diceOne"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
