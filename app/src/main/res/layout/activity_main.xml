@@ -9,8 +9,8 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/diceOne"
         style="@style/dice_textView_style"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="@dimen/_115sdp"
+        android:layout_marginTop="@dimen/_36sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +29,25 @@
         android:layout_marginStart="@dimen/_40sdp"
         app:layout_constraintBottom_toBottomOf="@+id/diceOne"
         app:layout_constraintStart_toEndOf="@+id/diceOne"
+        app:layout_constraintTop_toTopOf="@+id/diceOne" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageDiceOne"
+        style="@style/dice_imageStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/diceOne"
+        app:layout_constraintEnd_toStartOf="@+id/diceOne"
         app:layout_constraintTop_toTopOf="@+id/diceOne"
-        />
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@drawable/dice_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageDiceTwo"
+        style="@style/dice_imageStyle"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/diceTwo"
+        app:layout_constraintStart_toEndOf="@+id/diceTwo"
+        app:layout_constraintTop_toTopOf="@+id/diceTwo"
+        tools:srcCompat="@drawable/dice_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

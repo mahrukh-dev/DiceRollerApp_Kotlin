@@ -19,4 +19,9 @@
         <item name="android:background">@color/button_color</item>
     </style>
 
+    <style name="dice_imageStyle">
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:layout_height">@dimen/_50sdp</item>
+    </style>
+
 </resources>
